@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LYs-dS-pSf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gLa-sf-Ty1">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -142,6 +142,45 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-209" y="-3"/>
+        </scene>
+        <!--Two Equal-Width Buttons-->
+        <scene sceneID="ERX-t6-zKY">
+            <objects>
+                <viewController title="Two Equal-Width Buttons" id="gLa-sf-Ty1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Od8-1B-ZJ0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXj-va-sbo">
+                                <rect key="frame" x="8" y="812" width="189" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.51764705879999995" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="short">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gd4-GQ-NgD">
+                                <rect key="frame" x="217" y="812" width="189" height="30"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.51764705879999995" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Much Longer Button Title">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Gd4-GQ-NgD" firstAttribute="leading" secondItem="IXj-va-sbo" secondAttribute="trailing" constant="20" id="2rG-RF-sJI"/>
+                            <constraint firstItem="kkf-MM-Ozw" firstAttribute="trailing" secondItem="Gd4-GQ-NgD" secondAttribute="trailing" constant="8" id="BVg-Mf-yxb"/>
+                            <constraint firstItem="kkf-MM-Ozw" firstAttribute="bottom" secondItem="IXj-va-sbo" secondAttribute="bottom" constant="20" id="F5B-ep-Wco"/>
+                            <constraint firstItem="IXj-va-sbo" firstAttribute="width" secondItem="Gd4-GQ-NgD" secondAttribute="width" id="Hpo-ZQ-Y81"/>
+                            <constraint firstItem="kkf-MM-Ozw" firstAttribute="bottom" secondItem="Gd4-GQ-NgD" secondAttribute="bottom" constant="20" id="LAS-Js-meU"/>
+                            <constraint firstItem="IXj-va-sbo" firstAttribute="leading" secondItem="kkf-MM-Ozw" secondAttribute="leading" constant="8" id="rUW-Dk-yfc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kkf-MM-Ozw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVb-j8-7bX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-213" y="694"/>
         </scene>
         <!--CoupleSameViews-->
         <scene sceneID="ykI-Yt-J1U">
